@@ -1,0 +1,114 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/NativeMenubar/NativeMenubar.uss?fileID=7433441132597879392&amp;guid=ced37f5bc499fdf4e8d8c066578e2171&amp;type=3#NativeMenubar" />
+    <ui:VisualElement name="Menubar">
+        <ui:VisualElement name="TopBar" class="native-menubar">
+            <ui:Button name="MenubarButton" class="native-button">
+                <ui:Label name="ButtonLabel" text="File" class="native-button-label" style="flex-grow: 1;" />
+                <ui:VisualElement name="Submenu" class="native-menubar native-submenu">
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="New" name="SubmenuButtonLabel" class="native-submenu-button-label native-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + N" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-submenu-button-shortcut native-button-label" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Open" name="SubmenuButtonLabel" class="native-submenu-button-label native-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + O" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-submenu-button-shortcut native-button-label" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Open Recent" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-1087164816274819069&amp;guid=9b0d5ac2efd49c545b1442e8b81f4d74&amp;type=3#arrow-right@2x&apos;); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                        <ui:VisualElement name="SubSubmenu" class="native-menubar native-submenu native-subsubmenu">
+                            <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                                <ui:Label text="Example Project" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                                <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                            </ui:Button>
+                            <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                                <ui:Label text="Example Project" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                                <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                            </ui:Button>
+                            <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                                <ui:Label text="Example Project" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                                <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                            </ui:Button>
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:VisualElement name="VerticalSeperator" class="vertical-seperator" />
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Save" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" text="Ctrl + S" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Save As..." name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" text="Ctrl + Shift + S" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                    <ui:VisualElement name="VerticalSeperator" class="vertical-seperator" />
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Exit" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); background-image: none; flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="MenubarButton" class="native-button">
+                <ui:Label name="NativeButtonLabel" text="Edit" class="native-button-label" />
+                <ui:VisualElement name="Submenu" class="native-menubar native-submenu" style="position: absolute;">
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Undo" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + Z" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Undo History" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + U" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-1087164816274819069&amp;guid=9b0d5ac2efd49c545b1442e8b81f4d74&amp;type=3#arrow-right@2x&apos;);" />
+                        <ui:VisualElement name="SubSubmenu" class="native-menubar native-submenu native-subsubmenu">
+                            <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                                <ui:Label text="Undo Step 1" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                                <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                            </ui:Button>
+                            <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                                <ui:Label text="Undo Step 2" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                                <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                            </ui:Button>
+                            <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                                <ui:Label text="Undo Step 3" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                                <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                            </ui:Button>
+                        </ui:VisualElement>
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Redo" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + Y" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px; background-image: none;" />
+                    </ui:Button>
+                    <ui:VisualElement name="VerticalSeperator" class="vertical-seperator" />
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Cut" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + X" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Copy" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + C" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px; background-image: none;" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="SubmenuButton" class="native-button">
+                        <ui:Label text="Paste" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-label" />
+                        <ui:Label tabindex="-1" text="Ctrl + V" display-tooltip-when-elided="true" name="SubmenuButtonLabel" class="native-button-label native-submenu-button-shortcut" />
+                        <ui:VisualElement style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-shrink: 0; align-self: center; min-width: 12px; min-height: 12px; background-image: none;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

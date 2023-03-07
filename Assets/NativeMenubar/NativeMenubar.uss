@@ -1,0 +1,115 @@
+:root {
+    --dark-theme-background: rgb(56, 56, 56);
+    --dark-theme-button: rgba(0, 0, 0, 0);
+    --dark-theme-button-hover: rgb(100, 100, 100);
+    --dark-theme-text-colour: rgb(255, 255, 255);
+    --dark-theme-text-size: 18px;
+    --dark-theme-transition-time: 0ms;
+}
+
+.native-menubar {
+    flex-direction: row;
+    background-color: var(--dark-theme-background);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.native-button {
+    background-color: var(--dark-theme-button);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    transition-duration: var(--dark-theme-transition-time);
+    overflow: visible;
+    flex-direction: row;
+    min-width: 50px;
+}
+
+.native-button:hover {
+    background-color: var(--dark-theme-button-hover);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.native-button-label {
+    color: var(--dark-theme-text-colour);
+    -unity-text-align: upper-center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    font-size: var(--dark-theme-text-size);
+    flex-grow: 1;
+}
+
+.native-submenu {
+    position: absolute;
+    top: 100%;
+    min-width: 300px;
+    visibility: hidden;
+    flex-direction: column;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.native-submenu-button-label {
+    padding-left: 30px;
+    -unity-text-align: upper-left;
+}
+
+.native-submenu-button-shortcut {
+    padding-left: 30px;
+    -unity-text-align: upper-right;
+}
+
+.vertical-seperator {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: var(--dark-theme-text-colour);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.menubar-behaviour:hover > .native-submenu {
+    visibility: visible;
+}
+
+.native-subsubmenu {
+    left: 100%;
+    top: -2px;
+}
