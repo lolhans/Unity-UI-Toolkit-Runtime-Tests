@@ -1,9 +1,9 @@
-const cacheName = "DefaultCompany-UiBuilderDemos-0.1";
+const cacheName = "DefaultCompany-Unity-UI-Toolkit-Runtime-Tests-1.0";
 const contentToCache = [
-    "Build/Build.loader.js",
-    "Build/Build.framework.js.gz",
-    "Build/Build.data.gz",
-    "Build/Build.wasm.gz",
+    "Build/TestBuild.loader.js",
+    "Build/TestBuild.framework.js",
+    "Build/TestBuild.data",
+    "Build/TestBuild.wasm",
     "TemplateData/style.css"
 
 ];

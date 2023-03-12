@@ -1,11 +1,11 @@
 {
-    "name": "UiBuilderDemos",
-    "short_name": "UiBuilderDemos",
+    "name": "Unity-UI-Toolkit-Runtime-Tests",
+    "short_name": "Unity-UI-Toolkit-Runtime-Tests",
     "start_url": "index.html",
     "display": "fullscreen",
     "background_color": "#231F20",
     "theme_color": "#000",
-    "description": "Test product subscription",
+    "description": "",
     "icons": [{
       "src": "TemplateData/icons/unity-logo-dark.png",
       "sizes": "144x144",
